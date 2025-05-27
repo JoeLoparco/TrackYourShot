@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}TrackYourShot - Login Error{% endblock %}
+
+{% block content %}
+<div class="hero-section bg-primary text-white py-5 mb-5 rounded">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-3">Invalid Credentials</h1>
+        <p class="lead mb-4">The email or password you entered is incorrect.</p>
+        <div class="d-flex gap-3 justify-content-center">
+            <a href="/login" class="btn btn-secondary btn-lg px-4">Try Again</a>
+            <a href="/register" class="btn btn-outline-light btn-lg px-4">Create Account</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
