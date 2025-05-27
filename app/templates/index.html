@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+
+{% block title %}TrackYourShot - Basketball Training Tracker{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="hero-section bg-primary text-white py-5 mb-5 rounded">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-3">Track Your Basketball Progress Like Never Before</h1>
+        <p class="lead fs-5 mb-4">Join other basketball players in tracking your training, sharing achievements, and improving your game.</p>
+        <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+            <a href="/register" class="btn btn-secondary btn-lg px-4">Get Started</a>
+            <a href="/learnMore" class="btn btn-outline-light btn-lg px-4">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="container">
+    <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Everything You Need to Elevate Your Game</h2>
+        <p class="lead text-muted">Comprehensive tracking and analysis tools designed for basketball players at every level</p>
+    </div>
+    
+    <div class="row g-4 mb-5">
+        <!-- Workout Intensity Tracking -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-fire text-warning" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="card-title text-center mb-3">Workout Intensity</h5>
+                    <p class="card-text">Monitor your training intensity with heart rate zones, perceived exertion scales, and workout duration tracking.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Heart rate monitoring</li>
+                        <li><i class="fas fa-check text-success me-2"></i>RPE scale tracking</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Fatigue level analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill Level & Caliber -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-trophy text-warning" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="card-title text-center mb-3">Skill Caliber Tracking</h5>
+                    <p class="card-text">Rate your performance against players at your level. Track improvement across different skill categories.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Skill level assessment</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Peer comparison</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Progress visualization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shot Analytics -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-bullseye text-warning" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="card-title text-center mb-3">Advanced Shot Analytics</h5>
+                    <p class="card-text">Detailed shooting analysis with heat maps, accuracy tracking by court zone, and shot selection insights.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Court zone analysis</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Shot type breakdown</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Accuracy trends</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drill Performance -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-stopwatch text-warning" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="card-title text-center mb-3">Drill Performance</h5>
+                    <p class="card-text">Track your performance in specific basketball drills. Time your exercises and monitor improvement over time.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Drill library</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Performance metrics</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Personal records</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Features -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-users text-warning" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="card-title text-center mb-3">Community & Challenges</h5>
+                    <p class="card-text">Connect with other players, share your achievements, and participate in community challenges.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Player community</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Weekly challenges</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Achievement sharing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Performance -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-chart-line text-warning" style="font-size: 3rem;"></i>
+                    </div>
+                    <h5 class="card-title text-center mb-3">Game Performance</h5>
+                    <p class="card-text">Log your actual game statistics and see how your training translates to real game performance.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Game stat logging</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Performance analysis</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Training correlation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works Section -->
+    <div class="bg-light py-5 rounded mb-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">How TrackYourShot Works</h2>
+                <p class="lead">Get started in minutes and see improvements in weeks</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <span class="fw-bold fs-3">1</span>
+                        </div>
+                    </div>
+                    <h4 class="mb-3">Create Your Profile</h4>
+                    <p class="text-muted">Set up your player profile with your position, skill level, and basketball goals.</p>
+                </div>
+                
+                <div class="col-lg-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <span class="fw-bold fs-3">2</span>
+                        </div>
+                    </div>
+                    <h4 class="mb-3">Track Your Training</h4>
+                    <p class="text-muted">Log your workouts, drills, and games. Record everything from shooting sessions to conditioning.</p>
+                </div>
+                
+                <div class="col-lg-4 text-center">
+                    <div class="mb-4">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                            <span class="fw-bold fs-3">3</span>
+                        </div>
+                    </div>
+                    <h4 class="mb-3">Analyze & Improve</h4>
+                    <p class="text-muted">Review your progress with detailed analytics and get personalized insights.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="text-center py-5">
+        <h2 class="display-5 fw-bold mb-3">Ready to Elevate Your Game?</h2>
+        <p class="lead mb-4">Join thousands of players who are already tracking their way to success</p>
+        <a href="/register" class="btn btn-primary btn-lg px-5">
+            <i class="fas fa-basketball-ball me-2"></i>Start Your Journey
+        </a>
+    </div>
+</div>
+
+{% endblock %}

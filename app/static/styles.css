@@ -1,0 +1,49 @@
+:root {
+  --bs-primary: #ff6b00;        /* Basketball orange */
+  --bs-primary-rgb: 255, 107, 0; /* RGB values for transparency */
+  --bs-secondary: #1e3a8a;      /* Deep navy blue */
+  --bs-secondary-rgb: 30, 58, 138;
+  --bs-primary-bg-subtle: #fff3e6;
+  --bs-primary-border-subtle: #ffcc99;
+  --bs-primary-text-emphasis: #b8440a;
+}
+
+.btn-primary {
+  background-color: #ff6b00 !important;
+  border-color: #ff6b00 !important;
+}
+
+.btn-primary:hover {
+  background-color: #e55a00 !important;
+  border-color: #e55a00 !important;
+}
+
+.bg-primary {
+  background-color: #ff6b00 !important;
+}
+
+.btn-secondary {
+  background-color: #374151 !important;
+  border-color: #374151 !important;
+  color: white !important;
+}
+
+.btn-secondary:hover {
+  background-color: #707884 !important;
+  border-color: #707884 !important;
+  color: white !important;
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6b00 !important;
+    transition: color 0.3s ease;
+}
