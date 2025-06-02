@@ -17,3 +17,30 @@ def login():
             return render_template('loginValid.html')
         else:
             return render_template('loginInvalid.html')
+    
+@appInstance.route('/signUp', methods=['GET', 'POST'])
+def signUp():
+    if request.method == 'GET':
+        return render_template('signUp.html')
+    elif request.method == 'POST':
+        # Grab User Info from Forms in the HTML page
+        email = request.form['email']
+        password = request.form['password']
+        userName = request.form['userName']
+
+        #[TODO]# Query DB to See if User Exits 
+        user = User.query.filter_by(email=email, password=password).first()
+        if user is not None:
+            return f"Sorry a USer Already Exists with those Credential Please Try a new email"
+        #[TODO]# Add User to the DB if they dont exist
+        else:
+            with appInstance.app_context(): ## Nedded when Working with Ative Db gives flask our 'context'
+                new_user = User(
+                    email= email,
+                    password= password,  # We'll hash this later
+                    username= userName
+                )
+                db.session.add(new_user)
+                db.session.commit()
+
+            return render_template('signUpCompleted.html')

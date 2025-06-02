@@ -18,7 +18,7 @@ appInstance.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Initialize database
 db = SQLAlchemy(appInstance)
 
-# User model
+# User model(Creates User Table in Db with the associaeted metaData)
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(120), unique=True, nullable=False)
@@ -26,6 +26,6 @@ class User(db.Model):
     username = db.Column(db.String(80), nullable=False)
     created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
 
-# Import routes AFTER database setup
+# Import routes (Always After database setup !)
 from app.routes import routes
 from app.routes import auth
